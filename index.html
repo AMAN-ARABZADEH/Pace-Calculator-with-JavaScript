@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <title>Pace Calculator</title>
+  </head>
+  <body>
+    <a href="index.html">Back Home</a>
+    <h1 id="title">Pace <span id="span">Calculatorb </span></h1>
+    <br /><br />
+    <section id="form">
+      <form id="pace-form">
+        <label for="distance" style="font-size: 1.4rem"
+          >Target Distance:
+        </label>
+        <br />
+        <br />
+        <input
+          type="number"
+          id="distance"
+          placeholder="Target Distance (in km or miles):"
+          name="distance"
+          style="font-size: 1.2rem"
+          required
+        />
+        <select id="unit" name="unit" style="font-size: 1.3rem; width: 60%">
+          <option value="km">km</option>
+          <option value="miles">miles</option>
+        </select>
+        <br /><br />
+        <label for="hours" style="font-size: 1.4rem">Target Timing:</label>
+        <br />
+        <br />
+        <input
+          type="number"
+          id="hours"
+          name="hours"
+          min="0"
+          max="24"
+          placeholder="hours"
+          style="font-size: 1.2rem"
+          required
+        />
+        <input
+          type="number"
+          id="minutes"
+          name="minutes"
+          style="font-size: 1.2rem"
+          min="0"
+          max="59"
+          placeholder="minutes"
+          required
+        />
+        <input
+          type="number"
+          id="seconds"
+          name="seconds"
+          min="0"
+          max="59"
+          style="font-size: 1.2rem"
+          placeholder="seconds"
+          required
+        />
+        <br /><br />
+        <button type="submit" id="submit" value="Submit">Submit</button>
+        <button type="reset" id="reset" value="reset">Reset</button>
+      </form>
+      <br />
+      <p id="pace"></p>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
