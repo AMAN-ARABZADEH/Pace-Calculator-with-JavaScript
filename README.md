@@ -6,3 +6,6 @@ The website is user-friendly and easy to navigate. Simply enter the distance and
 I hope that runners of all levels find this Pace Calculator useful in their training. By tracking your pace and progress, you can set realistic goals and work towards becoming a better and faster runner.
 
 To access the Pace Calculator website, please follow this link: https://aman-arabzadeh.github.io/PaceCalculator.github.io/.
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
